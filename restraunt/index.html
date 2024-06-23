@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Ordering System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#orders">Orders</a></li>
+                <li><a href="#delivery">Delivery</a></li>
+                <li><a href="#account">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu-categories">
+                <a href="pizza.html">
+                    <img src="img1.jpg" alt="Pizza">
+                    <span>Pizza</span>
+                </a>
+                <a href="chinese.html">
+                    <img src="img2.jpg" alt="Chinese">
+                    <span>Chinese</span>
+                </a>
+                <a href="south-indian.html">
+                    <img src="img3.jpg" alt="South Indian">
+                    <span>South Indian</span>
+                </a>
+                <a href="salad.html">
+                    <img src="img4.jpg" alt="Salad">
+                    <span>Salad</span>
+                </a>
+            </div>
+        </section>
+        <section id="orders">
+            <h2>Orders</h2>
+                <div id="order-summary">
+                    <ul id="order-list">
+                        <li>
+                            <span>Margherita</span>
+                            <span class="quantity">
+                                <button class="decrease">-</button>
+                                <span>1</span>
+                                <button class="increase">+</button>
+                            </span>
+                            <span class="price">300rs</span>
+                            <button class="remove">Remove</button>
+                        </li>
+                        <!-- Add more items here as necessary -->
+                    </ul>
+                    <div id="order-total">
+                        <span>Total:</span>
+                        <span>300rs</span>
+                    </div>
+                    <button id="checkout">Proceed to Checkout</button>
+                </div>
+            
+        </section>
+        <!--delivery status will be rendered here -->
+            <section id="delivery">
+                <h2>Delivery</h2>
+                <div id="delivery-status">
+                    <div class="delivery-item">
+                        <h3>Order #12345</h3>
+                        <p>Status: On the way</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;"></div>
+                        </div>
+                        <p>Estimated Delivery Time: 20 minutes</p>
+                    </div>
+                    <div class="delivery-item">
+                        <h3>Order #12346</h3>
+                        <p>Status: Delivered</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 100%;"></div>
+                        </div>
+                        <p>Delivered at: 1:30 PM</p>
+                    </div>
+                    <!-- Placeholder for map integration -->
+                    <div id="map-placeholder">
+                        <p>Map view of delivery location (Coming Soon)</p>
+                    </div>
+                </div>
+
+        </section>
+        <section id="account">
+            <h2>Account</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Login">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
